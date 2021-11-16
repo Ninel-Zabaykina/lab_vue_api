@@ -5,18 +5,15 @@
     That's what you are looking for: {{ value }}
     <button @click="value = '123'">Find film</button>
     <FilmList />
-    <FilmCard />
   </div>
 </template>
 
 <script>
 import FilmList from "./FilmList";
-import FilmCard from "./FilmCard";
 
 export default {
   name: "Form",
   components: {
-    FilmCard,
     FilmList
   },
   props: {},
@@ -37,6 +34,7 @@ export default {
 <style scoped>
   .form {
     display: flex;
+    flex-direction: column ;
     justify-content: center;
     align-items: center;
     max-width: 900px;

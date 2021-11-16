@@ -1,9 +1,28 @@
 {
-  "posts": [
-    { "id": 1, "title": "json-server", "author": "typicode" }
-  ],
-  "comments": [
-    { "id": 1, "body": "some comment", "postId": 1 }
-  ],
-  "profile": { "name": "typicode" }
+  "films": [
+    {
+      "name": "film1",
+      "release": "2001",
+      "genre": "fantasy",
+      "director": "Travolta",
+      "starring": "blablabla",
+      "id": "1"
+    },
+    {
+      "name": "film2",
+      "release": "2002",
+      "genre": "fantasy",
+      "director": "Travolta",
+      "starring": "blablabla",
+      "id": "2"
+    },
+    {
+      "name": "film3",
+      "release": "2003",
+      "genre": "fantasy",
+      "director": "Travolta",
+      "starring": "blablabla",
+      "id": "3"
+    }
+  ]
 }
