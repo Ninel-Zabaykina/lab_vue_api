@@ -6,7 +6,11 @@
    <p class="film_genre">Genre: {{film_data.genre}}</p>
    <p class="film_director">Director: {{film_data.director}}</p>
    <p class="film_starring">Starring: {{film_data.starring}}</p>
-   <button class="add_to_favorite_btn">Add to favorite</button>
+   <button
+       class="add_to_favorite_btn btn"
+       @click="addToFavorite">
+     Add to favorite
+   </button>
  </div>
 </template>
 
@@ -20,7 +24,16 @@ name: "Film Cart",
       return {}
     }
   }
-  }
+  },
+  data() {
+    return {}
+  },
+  computed: {},
+  methods: {
+    addToFavorite () {
+      this.$emit('addToFavorite', this.film_data)
+    }
+  },
 }
 </script>
 

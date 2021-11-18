@@ -9,7 +9,8 @@
 </template>
 
 <script>
-import FilmList from "./FilmList";
+import FilmList from "./FilmList"
+import {mapGetters} from 'vuex'
 
 export default {
   name: "Form",
